@@ -1,45 +1,38 @@
-.DS_STORE
 
-/dist/
-/bazel-out
-/integration/bazel/bazel-*
-e2e_test.*
-*.log
-node_modules
+# compiled output
+/dist
+/tmp
+/out-tsc
 
-# Include when developing application packages.
-pubspec.lock
-.c9
-.idea/
-.devcontainer/*
-!.devcontainer/README.md
-!.devcontainer/recommended-devcontainer.json
-!.devcontainer/recommended-Dockerfile
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
 .settings/
-.vscode/launch.json
-.vscode/settings.json
-.vscode/tasks.json
-*.swo
-modules/.settings
-modules/.vscode
-.vimrc
-.nvimrc
+*.sublime-workspace
 
-# Don't check in secret files
-*secret.js
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# Ignore npm/yarn debug log
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
 npm-debug.log
 yarn-error.log
+testem.log
+/typings
 
-# build-analytics
-.build-analytics
-
-# rollup-test output
-/modules/rollup-test/dist/
-
-# User specific bazel settings
-.bazelrc.user
-
-.notes.md
-baseline.json
+# System Files
+.DS_Store
+Thumbs.db
