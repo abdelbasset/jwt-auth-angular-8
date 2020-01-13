@@ -14,6 +14,12 @@ const routes: Routes = [
     component: LoginComponent,
     canActivate: [AuthGuard]
   },
+  {
+    path: 'secret-random-number',
+    loadChildren: './random/random.module#RandomModule',
+    canActivate: [RandomGuard],
+    canLoad: [RandomGuard]
+  }
   
 ];
 
